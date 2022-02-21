@@ -1,6 +1,6 @@
 <div>
   <p>Advice #117</p>
-  <h2>&ldquo;It is easy to sit up and take notice, what&lsquo;s difficult is getting up and taking action.&rdquo;</h2>
+  <h1>&ldquo;It is easy to sit up and take notice, what&lsquo;s difficult is getting up and taking action.&rdquo;</h1>
 
   <picture>
     <source srcset="/pattern-divider-desktop.svg"
