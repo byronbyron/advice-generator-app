@@ -1,11 +1,38 @@
+<script context="module">
+  export async function load({ fetch }) {
+    const res = await fetch('https://api.adviceslip.com/advice');
+    const advice = await res.json();
+
+    if (res.ok) {
+      return {
+        props: {
+          advice
+        }
+      }
+    }
+
+    return {
+      status: res.status,
+      error: new Error('Could not fetch advice.')
+    }
+  }
+</script>
+
+<script>
+  export let advice;
+</script>
+
 <div>
-  <p>Advice #117</p>
-  <h1>&ldquo;It is easy to sit up and take notice, what&lsquo;s difficult is getting up and taking action.&rdquo;</h1>
+  <!-- <p>Advice #117</p> -->
+  <!-- <h1>&ldquo;It is easy to sit up and take notice, what&lsquo;s difficult is getting up and taking action.&rdquo;</h1> -->
+
+  <p>Advice #{advice.slip.id}</p>
+  <h1>&ldquo;{advice.slip.advice}&rdquo;</h1>
 
   <picture>
     <source srcset="/pattern-divider-desktop.svg"
             media="(min-width: 992px)">
-    <img src="/pattern-divider-mobile.svg" alt="" />
+    <img src="/pattern-divider-mobile.svg" alt="divider" />
   </picture>
 
   <button>
