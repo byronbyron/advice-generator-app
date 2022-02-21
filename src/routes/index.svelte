@@ -23,11 +23,11 @@
 </script>
 
 <div>
-  <!-- <p>Advice #117</p> -->
-  <!-- <h1>&ldquo;It is easy to sit up and take notice, what&lsquo;s difficult is getting up and taking action.&rdquo;</h1> -->
+  <p>Advice #117</p>
+  <h1>&ldquo;It is easy to sit up and take notice, what&lsquo;s difficult is getting up and taking action.&rdquo;</h1>
 
-  <p>Advice #{advice.slip.id}</p>
-  <h1>&ldquo;{advice.slip.advice}&rdquo;</h1>
+  <!-- <p>Advice #{advice.slip.id}</p>
+  <h1>&ldquo;{advice.slip.advice}&rdquo;</h1> -->
 
   <picture>
     <source srcset="/pattern-divider-desktop.svg"
